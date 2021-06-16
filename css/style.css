@@ -1,0 +1,154 @@
+body {
+  background: whitesmoke;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: background 0.3s ease-in-out;
+}
+
+body {
+  background: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  width: 100vw;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+.container {
+  width: 100vw;
+  max-width: 90%;
+  margin: 10px auto;
+  display: flex;
+}
+
+.container section {
+  width: 85%;
+  margin: 0 20px;
+}
+
+.container aside {
+  width: 25%;
+  background: white;
+
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  height: 90vh;
+}
+
+aside > div {
+  margin-top: 20px;
+}
+
+.container aside h2 {
+  text-align: left;
+}
+
+.container aside h3 {
+  text-align: center;
+  font-size: 14px;
+  margin: 5px 10px;
+}
+
+.button-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-wrapper button {
+  background: rgb(209, 236, 209);
+  outline: none;
+  width: 6rem;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+}
+
+.button-wrapper button:hover,
+.button-wrapper button:active {
+  background: rgb(93, 184, 93);
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 250px;
+}
+
+.card .image-wrapper {
+  background: whitesmoke;
+}
+.card .image-wrapper .card h2 {
+  color: rgb(36, 36, 148);
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.card ul b,
+.card p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.card ul li {
+  align-items: center;
+  margin-left: 25px;
+}
+
+.card-wrapper .card img {
+  height: 150px;
+  width: 170px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    float: right;
+  }
+  .container aside {
+    width: 85%;
+    margin: auto;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .card-wrapper {
+    width: 100%;
+
+    margin: 0;
+    margin-top: 20px;
+  }
+  .container .card {
+    width: 100%;
+    margin: 10px 0;
+    padding: ;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .button-wrapper button {
+    width: 4rem;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Launch Programs</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div>
+        <h1>
+            SpaceX Launch Programs
+        </h1>
+    </div>
+    <div class="container">
+        <aside>
+            <h2>Filters</h2>
+            <div>
+                <h3>Launch Years
+                    <hr>
+                </h3>
+                <div id='years' class="button-wrapper">
+                    <button data-launch_year='2006' class='years'>2006</button>
+                    <button data-launch_year='2007' class='years'>2007</button>
+                    <button data-launch_year='2008' class='years'>2008</button>
+                    <button data-launch_year='2009' class='years'>2009</button>
+                    <button data-launch_year='2010' class='years'>2010</button>
+                    <button data-launch_year='2011' class='years'>2011</button>
+                    <button data-launch_year='2012' class='years'>2012</button>
+                    <button data-launch_year='2013' class='years'>2013</button>
+                    <button data-launch_year='2014' class='years'>2014</button>
+                    <button data-launch_year='2015' class='years'>2015</button>
+                    <button data-launch_year='2016' class='years'>2016</button>
+                    <button data-launch_year='2017' class='years'>2017</button>
+                    <button data-launch_year='2018' class='years'>2018</button>
+                    <button data-launch_year='2019' class='years'>2019</button>
+                    <button data-launch_year='2020' class='years'>2020</button>
+                </div>
+            </div>
+            <div>
+                <h3>Successful Launch
+                    <hr>
+                </h3>
+                <div class="button-wrapper">
+                    <button data-launch_success='true' class="launch">True</button>
+                    <button data-launch_success='false' class="launch">False</button>
+                </div>
+            </div>
+            <div>
+                <h3>Successful Landing
+                    <hr>
+                </h3>
+                <div class="button-wrapper">
+                    <button data-land-success='ture' class="landing">True</button>
+                    <button data-land-success='false' class="landing">False</button>
+                </div>
+            </div>
+        </aside>
+        <section>
+            <div id="card-wrapper" class="card-wrapper">
+            </div>
+    </div>
+    </section>
+    </div>
+    <footer> <b>Developed by :</b> swpanil bhakare</footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
