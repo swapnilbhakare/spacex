@@ -2,6 +2,7 @@ const cardWrapper = document.querySelector("#card-wrapper");
 const yearsBtn = document.querySelectorAll(".years");
 const launch = document.querySelectorAll(".launch");
 const landing = document.querySelectorAll(".landing");
+// fetch data from data file
 fetch("/data.json")
   .then(function (response) {
     return response.json();
@@ -15,7 +16,7 @@ fetch("/data.json")
     console.log("Fetch problem: " + err.message);
   });
 
-// filter yearly items
+// show all missions
 
 function spacex(missions) {
   let display = missions.map((mission) => {
@@ -49,7 +50,7 @@ function spacex(missions) {
   });
   cardWrapper.innerHTML = display.join(" ");
 }
-
+//filter by year
 function filterByYears(missions) {
   yearsBtn.forEach((button) => {
     button.addEventListener("click", (event) => {
